@@ -3,6 +3,12 @@ st - simple terminal
 st is a simple terminal emulator for X which sucks less.
 
 
+Changes to the original
+-----------------------
+All the applied patches are included in the ./applied directory. You should be
+able to understand all the changes from inspecting the ./config.def.h file.
+
+
 Requirements
 ------------
 In order to build st you need the Xlib header files.
