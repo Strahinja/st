@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "PxPlus_IBM_VGA8 Nerd Font:size=12:antialias=false:autohint=true";
+static char *font = "PxPlus_IBM_VGA8 Nerd Font:size=12:style=Book:antialias=false:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
@@ -13,9 +13,9 @@ static char *font2[] = {
 };
 
 /* disable bold, italic and roman fonts globally */
-int disablebold = 0;
-int disableitalic = 0;
-int disableroman = 0;
+int disablebold = 1;
+int disableitalic = 1;
+int disableroman = 1;
 
 static int borderpx = 2;
 
