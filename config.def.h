@@ -10,7 +10,7 @@ static char *font = "xos4 Terminus:size=12:style=Regular:antialias=false:autohin
 /* Spare fonts */
 static char *font2[] = {
         "Noto Color Emoji:style=Regular:size=10",
-	"Symbols Nerd Font:style=2048-em:size=11"
+	"Symbols Nerd Font:style=2048-em:size=10"
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
