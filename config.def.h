@@ -202,6 +202,9 @@ static MouseShortcut mshortcuts[] = {
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
 };
 
+static char* openurlcmd[] = { "/bin/bash", "-c", "parseurl | dmenu -l 10 | xargs -r xdg-open", "externalpipe", NULL };
+static char* copyurlcmd[] = { "/bin/bash", "-c", "parseurl | dmenu -l 10 | xclip -selection primary", "externalpipe", NULL };
+
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
@@ -218,6 +221,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+	{ ShiftMask,		XK_Menu,	externalpipe,	{.v = copyurlcmd } },
+	{ XK_ANY_MOD,		XK_Menu,	externalpipe,	{.v = openurlcmd } },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
